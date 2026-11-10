@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://android.com">
+    <application
+        android:label="SpeedHack 1.5x"
+        android:hasCode="true">
+
+        <!-- السطور التي يبحث عنها Shizuposed ليتعرف على الأداة -->
+        <meta-data
+            android:name="xposedmodule"
+            android:value="true" />
+        <meta-data
+            android:name="xposeddescription"
+            android:value="أداة تسريع الألعاب المبرمجة على 1.5x" />
+        <meta-data
+            android:name="xposedminversion"
+            android:value="93" />
+    </application>
+</manifest>
