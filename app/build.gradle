@@ -1,0 +1,29 @@
+plugins {
+    id 'com.android.application'
+}
+android {
+    namespace 'com.example.speedhack'
+    compileSdk 33
+    defaultConfig {
+        applicationId "com.example.speedhack"
+        minSdk 26
+        targetSdk 33
+        versionCode 1
+        versionName "1.0"
+        externalNativeBuild {
+            cmake {
+                cppFlags "-O3 -flto"
+            }
+        }
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+    }
+    externalNativeBuild {
+        cmake {
+            path "src/main/cpp/CMakeLists.txt"
+        }
+    }
+}
